@@ -1,0 +1,316 @@
+//Desenvolvedor: João Vitor Comin
+
+import java.util.Scanner;
+
+public class quiz1 {
+
+	public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+		
+		int continua = 0;
+		int respo = 0;
+		int pont=0;
+		int opcao2;
+		
+		//Variavel
+		
+		while (continua != 1) {
+			
+			System.out.println("--------SpaceQuiz--------");
+			System.out.println("-------------------------");
+			System.out.println("|	1-Jogar		|");
+			System.out.println("-------------------------");
+			System.out.println("Opção: ");
+			int opcao = sc.nextInt();
+						
+			//Menu do QUIZ, foi feito uma opção para a pessoa escolher qual deseja.
+		
+			
+			
+			switch(opcao) {
+			case 1:
+				
+				System.out.println("Digite ( 1 ) para começar o QUIZ !! ");
+				
+				//Menu da confirmação do começo do QUIZ, utilizando switch case.
+				
+				opcao2 = sc.nextInt();
+				
+					
+				switch (opcao2) 
+				
+				{
+				case 1: 
+					
+					System.out.println("1 - Quantos planetas tem no nosso sistema solar ?");
+					System.out.println("Digite o numero da opção desejada !");
+					System.out.println("1 - Oito planetas");
+					System.out.println("2 - Um   planeta");
+					System.out.println("3 - Nove planetas");
+					System.out.println("4 - Doze planetas");
+					System.out.println("Resposta: ");
+					
+					//Pergunta utilizando switch case, que a pessoa escolhe qual vai escolher apenas digitando o numero desejado.
+					
+					respo = sc.nextInt();
+					System.out.println("-------------------------------------------------------------------------------------");
+					if (respo == 1) {
+						System.out.println("Alternativa Correta   !");
+						pont = pont+10;
+					System.out.println("-------------------------------------------------------------------------------------");
+					} else {
+						System.out.println("Alternativa Incorreta !");
+						pont = pont+0;
+					System.out.println("-------------------------------------------------------------------------------------");
+					}
+					System.out.println(" ");
+					
+					//Sistema de resposta utilizando IF e ELSE para ver se a pessoa acertou ou errou.
+					
+					System.out.println("2 - Qual o maior planeta do nosso sistema solar ?");
+					System.out.println("Digite o numero da opção desejada !");
+					System.out.println("1 - Júpiter");
+					System.out.println("2 - Terra");
+					System.out.println("3 - Marte");
+					System.out.println("4 - Vênus");
+					System.out.println("Resposta: ");
+					
+					//Pergunta utilizando switch case, que a pessoa escolhe qual vai escolher apenas digitando o numero desejado.
+					
+					respo = sc.nextInt();
+					System.out.println("-------------------------------------------------------------------------------------");
+					if (respo == 1) {
+						System.out.println("Alternativa Correta   !");
+						pont = pont+10;
+					System.out.println("-------------------------------------------------------------------------------------");
+					} else {
+						System.out.println("Alternativa Incorreta !");
+						pont = pont+0;
+					System.out.println("-------------------------------------------------------------------------------------");
+					
+					//Sistema de resposta utilizando IF e ELSE para ver se a pessoa acertou ou errou.
+					
+					}
+					System.out.println(" ");
+					System.out.println("3 - Qual planeta a gente vive ?");
+					System.out.println("Digite o numero da opção desejada !");
+					System.out.println("1 - Marte");
+					System.out.println("2 - Vênus");
+					System.out.println("3 - Terra");
+					System.out.println("4 - Júpiter");
+					System.out.println("Resposta: ");
+					
+					//Pergunta utilizando switch case, que a pessoa escolhe qual vai escolher apenas digitando o numero desejado.
+					
+					respo = sc.nextInt();
+					System.out.println("-------------------------------------------------------------------------------------");
+					if (respo == 3) {
+						System.out.println("Alternativa Correta   !");
+						pont = pont+10;
+					System.out.println("-------------------------------------------------------------------------------------");
+					} else {
+						System.out.println("Alternativa Incorreta !");
+						pont = pont+0;
+					System.out.println("-------------------------------------------------------------------------------------");
+					
+					//Sistema de resposta utilizando IF e ELSE para ver se a pessoa acertou ou errou.
+					
+					}
+					System.out.println(" ");
+					
+					System.out.println("4 - O Sol é o que ?");
+					System.out.println("Digite o numero da opção desejada !");
+					System.out.println("1 - Planeta");
+					System.out.println("2 - Etrela");
+					System.out.println("3 - Cidade");
+					System.out.println("4 - Lua");
+					System.out.println("Resposta: ");
+					
+					//Pergunta utilizando switch case, que a pessoa escolhe qual vai escolher apenas digitando o numero desejado.
+					
+					respo = sc.nextInt();
+					System.out.println("-------------------------------------------------------------------------------------");
+					if (respo == 2) {
+						System.out.println("Alternativa Correta   !");
+						pont = pont+10;
+					System.out.println("-------------------------------------------------------------------------------------");
+					} else {
+						System.out.println("Alternativa Incorreta !");
+						pont = pont+0;
+					System.out.println("-------------------------------------------------------------------------------------");
+					
+					//Sistema de resposta utilizando IF e ELSE para ver se a pessoa acertou ou errou.
+					
+					}
+					System.out.println(" ");
+					
+					System.out.println("5 - Quantos KM tem a Terra ?");
+					System.out.println("Digite o numero da opção desejada !");
+					System.out.println("1 - 6.780Km");
+					System.out.println("2 - 139.822Km");
+					System.out.println("3 - 116.464Km");
+					System.out.println("4 - 12.742Km");
+					System.out.println("Resposta: ");
+					
+					//Pergunta utilizando switch case, que a pessoa escolhe qual vai escolher apenas digitando o numero desejado.
+					
+					respo = sc.nextInt();
+					System.out.println("-------------------------------------------------------------------------------------");
+					if (respo == 4) {
+						System.out.println("Alternativa Correta   !");
+						pont = pont+10;
+					System.out.println("-------------------------------------------------------------------------------------");
+					} else {
+						System.out.println("Alternativa Incorreta !");
+						pont = pont+0;
+					System.out.println("-------------------------------------------------------------------------------------");
+					
+					//Sistema de resposta utilizando IF e ELSE para ver se a pessoa acertou ou errou.
+					
+					}
+					System.out.println(" ");
+					System.out.println("6 - Qual planeta Elon Musk está colonizando ?");
+					System.out.println("Digite o numero da opção desejada !");
+					System.out.println("1 - Marte");
+					System.out.println("2 - Júpiter");
+					System.out.println("3 - Vênus");
+					System.out.println("4 - Saturno");
+					System.out.println("Resposta: ");
+					
+					//Pergunta utilizando switch case, que a pessoa escolhe qual vai escolher apenas digitando o numero desejado.
+					
+					respo = sc.nextInt();
+					System.out.println("-------------------------------------------------------------------------------------");
+					if (respo == 1) {
+						System.out.println("Alternativa Correta   !");
+						pont = pont+10;
+					System.out.println("-------------------------------------------------------------------------------------");
+					} else {
+						System.out.println("Alternativa Incorreta !");
+						pont = pont+0;
+					System.out.println("-------------------------------------------------------------------------------------");
+					
+					//Sistema de resposta utilizando IF e ELSE para ver se a pessoa acertou ou errou.
+					
+					}
+					System.out.println(" ");
+					
+					System.out.println("7 - Qual é o menor planeta do sistema solar ?");
+					System.out.println("Digite o numero da opção desejada !");
+					System.out.println("1 - Júpiter");
+					System.out.println("2 - Terra");
+					System.out.println("3 - Mercúrio");
+					System.out.println("4 - Vênus");
+					System.out.println("Resposta: ");
+					
+					//Pergunta utilizando switch case, que a pessoa escolhe qual vai escolher apenas digitando o numero desejado.
+					
+					respo = sc.nextInt();
+					System.out.println("-------------------------------------------------------------------------------------");
+					if (respo == 3) {
+						System.out.println("Alternativa Correta   !");
+						pont = pont+10;
+					System.out.println("-------------------------------------------------------------------------------------");
+					} else {
+						System.out.println("Alternativa Incorreta !");
+						pont = pont+0;
+					System.out.println("-------------------------------------------------------------------------------------");
+					
+					//Sistema de resposta utilizando IF e ELSE para ver se a pessoa acertou ou errou.
+					
+					}
+					System.out.println(" ");
+					System.out.println("8 - Qual o planeta mais próximo do Sol ?");
+					System.out.println("Digite o numero da opção desejada !");
+					System.out.println("1 - Marte");
+					System.out.println("2 - Mercúrio");
+					System.out.println("3 - Terra");
+					System.out.println("4 - Júpiter");
+					System.out.println("Resposta: ");
+					
+					//Pergunta utilizando switch case, que a pessoa escolhe qual vai escolher apenas digitando o numero desejado.
+					
+					respo = sc.nextInt();
+					System.out.println("-------------------------------------------------------------------------------------");
+					if (respo == 2) {
+						System.out.println("Alternativa Correta   !");
+						pont = pont+10;
+					System.out.println("-------------------------------------------------------------------------------------");
+					} else {
+						System.out.println("Alternativa Incorreta !");
+						pont = pont+0;
+					System.out.println("-------------------------------------------------------------------------------------");
+					
+					//Sistema de resposta utilizando IF e ELSE para ver se a pessoa acertou ou errou.
+					
+					}
+					System.out.println(" ");
+					
+					System.out.println("9 - Quem foi o primeiro Homem a pisar na Lua ?");
+					System.out.println("Digite o numero da opção desejada !");
+					System.out.println("1 - Neil Armstrong");
+					System.out.println("2 - Jair Bolsonaro");
+					System.out.println("3 - John Glenn");
+					System.out.println("4 - Valentina Tereshkova");
+					System.out.println("Resposta: ");
+					
+					//Pergunta utilizando switch case, que a pessoa escolhe qual vai escolher apenas digitando o numero desejado.
+					
+					respo = sc.nextInt();
+					System.out.println("-------------------------------------------------------------------------------------");
+					if (respo == 1) {
+						System.out.println("Alternativa Correta   !");
+						pont = pont+10;
+					System.out.println("-------------------------------------------------------------------------------------");
+					} else {
+						System.out.println("Alternativa Incorreta !");
+						pont = pont+0;
+					System.out.println("-------------------------------------------------------------------------------------");
+					
+					//Sistema de resposta utilizando IF e ELSE para ver se a pessoa acertou ou errou.
+					
+					}
+					System.out.println(" ");
+					
+					System.out.println("10 - Qual a ordem dos planetas no nosso sistema solar ?");
+					System.out.println("Digite o numero da opção desejada !");
+					System.out.println("1 - Mercúrio, Vênus, Terra, Marte, Júpiter, Saturno, Urânio, Netuno, Plutão");
+					System.out.println("2 - Mercúrio, Vênus, Terra, Júpiter, Marte, Saturno, Urânio, Netuno, Plutão");
+					System.out.println("3 - Urânio, Vênus, Terra, Marte, Júpiter, Saturno, Mercúrio, Netuno, Plutão");
+					System.out.println("4 - Mercúrio, Vênus, Plutão, Marte, Júpiter, Saturno, Urânio, Netuno, Terra");
+					System.out.println("Resposta: ");
+					
+					//Pergunta utilizando switch case, que a pessoa escolhe qual vai escolher apenas digitando o numero desejado.
+					
+					respo = sc.nextInt();
+					System.out.println("-------------------------------------------------------------------------------------");
+					if (respo == 1) {
+						System.out.println("Alternativa Correta   !");
+						pont = pont+10;
+					System.out.println("-------------------------------------------------------------------------------------");
+					} else {
+						System.out.println("Alternativa Incorreta !");
+						pont = pont+0;
+					System.out.println("-------------------------------------------------------------------------------------");
+					
+					//Sistema de resposta utilizando IF e ELSE para ver se a pessoa acertou ou errou.
+	
+					}
+					
+					System.out.println("OBRIGADO POR JOGAR !! ");
+					
+					System.out.println("********************************");
+					System.out.println("Sua pontuação foi de: "+pont+" Pontos|");
+					System.out.println("********************************");
+					
+					//Pontuação do usuario.
+					break;
+				}
+				
+				}
+			break;
+					}
+			sc.close();
+				}
+	
+			}
