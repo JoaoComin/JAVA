@@ -1,0 +1,91 @@
+import java.util.Scanner;
+
+public class missaoV {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int x;
+		double num1, num2;
+		double soma;
+		
+		System.out.println("Digite a opção desejada: ");
+		
+		System.out.println("(1) Soma ");
+		
+		System.out.println("(2) Multiplicação ");
+		
+		System.out.println("(3) Divisão ");
+		
+		System.out.println("(4) Subtração ");
+		
+		System.out.println("(5) Potenciação ");
+		
+		System.out.println("(6) Porcentagem ");
+		
+		System.out.println("(7) Raiz quadrada ");
+		x = sc.nextInt();
+		
+		if (x == 1) {
+			System.out.println("Digite um numero: ");
+			num1 = sc.nextDouble();
+			System.out.println("Digite outro numero: ");
+			num2 = sc.nextDouble();
+			soma = num1 + num2;
+			
+			System.out.println("Resultado: "+soma);
+			
+		} if (x == 2) {
+			System.out.println("Digite um numero: ");
+			num1 = sc.nextDouble();
+			System.out.println("Digite outro numero: ");
+			num2 = sc.nextDouble();
+			soma = num1 * num2;
+			
+			System.out.println("Resultado: "+soma);
+		} if (x == 3) {
+			System.out.println("Digite um numero: ");
+			num1 = sc.nextDouble();
+			System.out.println("Digite outro numero: ");
+			num2 = sc.nextDouble();
+			soma = num1 / num2;
+			
+			System.out.println("Resultado: "+soma);
+		} if (x == 4) {
+			System.out.println("Digite um numero: ");
+			num1 = sc.nextDouble();
+			System.out.println("Digite outro numero: ");
+			num2 = sc.nextDouble();
+			soma = num1 - num2;
+			
+			System.out.println("Resultado: "+soma);
+		} if (x == 5) {
+			System.out.println("Digite um numero: ");
+			num1 = sc.nextDouble();
+			System.out.println("Digite outro numero: ");
+			num2 = sc.nextDouble();
+			
+			soma = Math.pow(num1, num2);
+			System.out.println("Resultado: "+soma);
+			
+		} if (x == 6) {
+			System.out.println("Digite um numero: ");
+			num1 = sc.nextDouble();
+			System.out.println("Digite outro numero: ");
+			num2 = sc.nextDouble();
+			
+			soma = num1 * num2/100;
+			System.out.println("Resultado: "+soma);
+			
+		} if (x == 7) {
+			System.out.println("Digite um numero: ");
+			num1 = sc.nextDouble();
+			
+			soma = Math.sqrt(num1);
+			System.out.println("Resultado: "+soma);
+		}
+		
+	sc.close();
+	}
+
+}
