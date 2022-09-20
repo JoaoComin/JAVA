@@ -1,0 +1,165 @@
+import java.util.Scanner;
+
+import calculadora.calculos;
+
+public class main {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		calculos calculos = new calculos();
+		
+		int x;
+		int resultados;
+		int result = 0;
+						
+		System.out.println("Digite a opção desejada: ");
+		
+		System.out.println("(1) Soma ");
+		
+		System.out.println("(2) Multiplicação ");
+		
+		System.out.println("(3) Divisão ");
+		
+		System.out.println("(4) Subtração ");
+		
+		System.out.println("(5) Potenciação ");
+		
+		System.out.println("(6) Porcentagem ");
+		
+		System.out.println("(7) Raiz quadrada ");
+		x = sc.nextInt();
+
+	
+		switch(x) {
+		
+		case 1: // soma
+		
+			System.out.println("Digite o primeiro numero: ");
+			calculos.num1 = sc.nextDouble();
+			System.out.println("Digite o segundo numero: ");
+			calculos.num2 = sc.nextDouble();
+			
+			calculos.Soma(calculos.num1, calculos.num2);
+			
+			break;
+			
+		case 2: // multiplicação
+			
+			System.out.println("Digite o primeiro numero: ");
+			calculos.num1 = sc.nextDouble();
+			System.out.println("Digite o segundo numero: ");
+			calculos.num2 = sc.nextDouble();
+			
+			calculos.Multiplicacao(calculos.num1, calculos.num2);
+			
+			break;
+			
+		case 3: // Divisão
+			
+			System.out.println("Digite o primeiro numero: ");
+			calculos.num1 = sc.nextDouble();
+			System.out.println("Digite o segundo numero: ");
+			calculos.num2 = sc.nextDouble();
+			
+			calculos.Divisao(calculos.num1, calculos.num2);
+			
+			break;
+			
+		case 4: // Subtração
+			
+			System.out.println("Digite o primeiro numero: ");
+			calculos.num1 = sc.nextDouble();
+			System.out.println("Digite o segundo numero: ");
+			calculos.num2 = sc.nextDouble();
+			
+			calculos.Subtracao(calculos.num1, calculos.num2);
+			
+			break;
+			
+		case 5: // Potenciação
+			
+			System.out.println("Digite o primeiro numero: ");
+			calculos.num1 = sc.nextDouble();
+			System.out.println("Digite o segundo numero: ");
+			calculos.num2 = sc.nextDouble();
+			
+			calculos.Potenciacao(calculos.num1, calculos.num2);
+			
+			break;
+			
+		case 6: // Porcentagem
+			
+			System.out.println("Digite o primeiro numero: ");
+			calculos.num1 = sc.nextDouble();
+			System.out.println("Digite o segundo numero: ");
+			calculos.num2 = sc.nextDouble();
+			
+			calculos.Porcentagem(calculos.num1, calculos.num2);
+			
+			break;
+			
+		case 7: // Raiz
+			
+			System.out.println("Digite o primeiro numero: ");
+			calculos.num1 = sc.nextDouble();
+			System.out.println("Digite o segundo numero: ");
+			calculos.num2 = sc.nextDouble();
+			
+			calculos.Raiz(calculos.num1);
+			
+			break;
+			
+		default:
+			System.out.println("Quantidade invalida!");
+		}
+				
+		
+		
+		
+	sc.close();
+	}
+  }
+  
+-----------------------------------------------------------------------------------------------------------------------
+
+package calculadora;
+
+public class calculos {
+
+		public double num1;
+		public double num2;
+		public double num3;
+		public double num4;
+		public double num5;
+		
+		public double Soma(double num1, double num2) {
+			return num1 + num2;
+		}
+		
+		public double Multiplicacao(double num1, double num2) {
+			return num1 * num2;
+		}
+		
+		public double Divisao(double num1, double num2) {
+			return num1 / num2;
+		}
+		
+		public double Subtracao(double num1, double num2) {
+			return num1 - num2;
+		}
+		
+		public double Potenciacao(double num1, double num2) {
+			return Math.pow(num1, num2);
+		}
+		
+		public double Porcentagem(double num1, double num2) {
+			return (num1 / 100) * num2;
+		}
+		
+		public double Raiz(double num1) {
+			return Math.sqrt(num1);
+		}
+
+}
